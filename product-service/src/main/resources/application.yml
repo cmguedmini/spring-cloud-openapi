@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /
+  port:
+    5001
+
+spring:
+  application:
+    name: product-service
+
+
+openapi:
+  service:
+    title: product-service doc
+    version: 1.0.0
+    url: http://localhost:8080
+
+springdoc:
+  api-docs:
+    path: /product-service/v3/api-docs
+  swagger-ui:
+    path: /product-service/swagger-ui.html
